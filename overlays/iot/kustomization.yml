@@ -6,3 +6,5 @@ resources:
 - rbac.yml
 - prometheus.yml
 - servicemonitor.yml
+- service.yml
+- endpoint.yml
