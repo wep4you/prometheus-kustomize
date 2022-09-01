@@ -2,10 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nodered-sensors
+  labels:
+    app: nodered-sensors
 spec:
   selector: {}
   type: ClusterIP
   ports:
-    - port: 80
-      protocol: TCP
+    - protocol: TCP
+      name: web
+      port: 80
       targetPort: 80
