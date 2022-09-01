@@ -5,11 +5,10 @@ metadata:
   labels:
     app: nodered-sensors
 spec:
-  selector:
-      app: nodered-sensors
-  type: ClusterIP
+  externalName: 172.16.207.11
   ports:
     - protocol: TCP
       name: web
       port: 80
       targetPort: 80
+  type: ExternalName

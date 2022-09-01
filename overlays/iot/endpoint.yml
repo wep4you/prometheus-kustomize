@@ -8,6 +8,6 @@ subsets:
 - addresses:
   - ip: 172.16.207.11
   ports:
-  - name: metrics
+  - name: web
     port: 1880
     protocol: TCP

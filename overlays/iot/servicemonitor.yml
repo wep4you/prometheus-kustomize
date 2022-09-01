@@ -5,9 +5,9 @@ metadata:
   labels:
   name: nodered-sensors
 spec:
-  endpoints:
-  - interval: 60s
-    port: web
   selector:
     matchLabels:
       app: nodered-sensors
+  endpoints:
+  - port: web
+    interval: 30s
